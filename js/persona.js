@@ -1,19 +1,20 @@
-const url = 'https://randomuser.me/api/?nat=es';
-let persona = "x";
+const url_ramdomuser = 'https://randomuser.me/api/?nat=es';
 
-fetch(url)
-.then((resp) => resp.json())
-.then(function(data) {
-    let persona = data.results;    
-    
-    return persona.map(function(persona){document.getElementById("nombreCompleto-titulo").innerHTML = `${persona.name.last}, ${persona.name.first}`});   
-    
-})  
-.then [let persona = data.results]
-.then(persona.map(profesionSexista(persona.gender)));
-,then ()
-    
 
+function traer_datos_actuales() {
+    // La función fetch() de la API devuelve una Promesa. Esta función
+    // expone una API similar, pero el valor de cumplimiento
+    // de la Promesa de esta función tiene más tareas
+    // implementadas sobre ella.
+    return fetch(url_ramdomuser).then((response) => {
+      
+      var j = response.json();
+      // podríamos hacer algo con j
+      return j; // valor de cumplimiento asignado al usuario de
+                // fetch_datos_actuales().then()
+    });
+  }
+const persona = traer_datos_actuales();
 
 
 console.log(persona);
