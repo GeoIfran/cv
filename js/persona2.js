@@ -1,5 +1,5 @@
 const url = 'https://randomuser.me/api/?nat=es';
-let persona = "x";
+let persona = {};
 function profesionSexista (sexo){
     if(sexo == "male"){
         return 'Experto en refrigeración de materiales de la construcción';

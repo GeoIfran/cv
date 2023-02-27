@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV de </title>
+    <title id="title_web">CV </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
    <!--Importacion de tipografias Roboto 100 swap y  Noto 0 100 0 200 1 100 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,81 +14,87 @@
 </head>
 <body>
     <header>
-        <h1 id="nombreCompleto-titulo">Nombre</h1>
-        <h2 id="profesion-titulo">Experto en refrigeración de materiales de la construcciónXD</h2>
+        <h1 id="nombreCompleto-titulo" >  <span id="apellido_tit"></span>, <span id="primerNombre_tit">Nombre</span></h1>
+        <h2 id="profesion-titulo"> <span >Expert<span id="profesion_sexista"></span> en refrigeración de materiales de la construcción</span></h2>
     </header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <ul class="navbar-nav">
-            <li><a>Perfil</a></li>
-            <li><a>Datos</a></li>
-            <li><a>Conocimientos</a></li>
-            <li><a>Experiencia</a></li>
+            <li><a href="#perfil">Perfil</a></li>
+            <li><a href="#datos">Datos</a></li>
+            <li><a href="#conocimientos">Conocimientos</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
         </ul>
     </nav>
     <main>
-        <div id="perfil"><img src="" alt="Imagen del CV"></div>
+        
+        <div id="perfil"  ><img id="foto" src="" alt="Imagen del CV"></div>
         <div id="contenido-perfil">
+            <a name="perfil"></a>
             <h3>Presentacion</h3>
-            <p></p>
+            <p>Soy una persona codial proactiva, trabajadora, responsable y puntillosa con mis tareas. Separo muy clara ente el tiempo de trabajo del personal. </p>
             <h3>Aspiraciones</h3>
-            <p></p>
+            <p>Me gusta formar parte de ambientes cordiales con almuerzos en grupo tareas comunes repartidas chistes y trabajo en armonia para que todo salga mejor.</p>
+            <p>Quisiera formar parte de un grupo de trabajo estable aunque cambien las obras en  las que trabajemos, no tengo conflicoto en trabajar tanto con hombres como con mujeres.</p>
         </div>
         <div id="datos">
-            <p>E-Mail: </p>
+            <p>E-Mail: <span id="datos_email"></span> </p>
             <p>
-            <img src="" alt="Logo WhatsApp"> 
+            <img src="" alt="Logo WhatsApp"> <span id="whatsapp"></span>
             </p>
         </div>
         <div id="contenido-datos">
+            <a name="datos"></a>
             <h3>Datos Personales</h3>
-            <p>Nombre Completo: </p>
-            <div>Tipo de Documento: Numero de Documento:</div>
-            <div>Nacionalidad: Fecha de Nacimiento:  Edad: Sexo: </div>
-            <div>Domicilio:</div>
-            <div>Telefono fijo: Telefono movil:</div>
-            <div>Redes Sociales:</div>
+            <p id="mombre_completo_contenido">Nombre Completo: <span id="apellido_contenido"></span>, <span id="nombre_contenido"></span></p>
+            <div id="tipo_y_numero_de_documento_contenido">Tipo de Documento: <span id="tipo_documento"></span> Numero de Documento: <span id="numero_documento"></span></div>
+            <div id="fecha_nacimiento_edad_sexo"> Fecha de Nacimiento: <span id="fecha_nacimiento"></span>  Edad: <span id="edad"></span> Sexo: <span id="sexo"></span></div>
+            <div id="domicilio">Domicilio: <span id="calle"></span> <span id="puerta"></span>, <span id="localidad-dir"></span>. </div>
+            <div>Telefono fijo: <span id="fijo"></span> Telefono movil: <span id="celular"></span></div>
         </div>
         <div id="conocimientos">
-            <p>Ultimo titulo</p>
+            <p>Secundario</p>
             <p>Idiomas</p>
-            <p>Idioma Nativo</p>
-            <p>Idioma Nivel</p>
+            <p>Español Nativo</p>
+            <p>Guarani Avanzado</p>
         </div>
         <div id="contenido-conocimientos">
-            <h3>Ultimo titulo</h3>
-            <p>Periodo de estudio. Institucion LinkTitulo</p>
+            <a name="conocimientos"></a>
+            <h3>Educacion Formal</h3>
+            <p>Secundario 2022. Escuela de Educación Media Nº 01 DE 02 </p>
             <div>
-            <h4>Titulo Anterior</h4>
-            <p>Periodo de estudio. Institucion LinkTitulo</p>
-            </div>
             <h3>Cursos e Idiomas</h3>
-            <p>Idioma Nativo</p>
+            <p>Albañileria  en CIFIC-CFP N° 17</p>
+            <p>Idioma Nativo Español</p>
              <div>
-                 <p>Item Periodo Organizacion Nivel</p>
+                 <p>SIU GUARANÍ en  Facultad Nacional de Humanidades y Artes de UNR</p>
              </div>
         </div>
         <div id="experiencia">
-            <p>Ultimo Trabajo</p>
-            <p>Tiempo</p>
-            <p>Empleador</p>
+            <p>Refrigeracion de materiales de la construccion </p>
+            <p>1 año</p>
+            <p>Arvica Constructora</p>
         </div>
         <div id="contenido-experiencia" >
-            <h3>Ultimo trabajo</h3>
-            <p>Descripcion del puestp</p>
-            <p>Periodo: Empleador</p>
+            <a name="experiencia"></a>
+            <h3>Refrigeracion de materiales de la construccion</h3>
+            <p>Tenia mi cargo mantener la optima umedad de los materiales ara lograr un resultado final mas rapido y optimo</p>
+            <p>2022 Avica Constructora SA</p>
             <div>
-                <h4>Trabajo Anterior</h4>
-                <p>Descripcion del puestp</p>
-                <p>Periodo: Empleador</p>
+                <h4>Proveedor de refrigerante de materiales de la construccion</h4>
+                <p>me encargaba de mantener constante el flujo del refrigerante de materiales de la construccion</p>
+                <p>2021 Elemental SA</p>
+                <h4>Acopiar refrigerante de materiales de la construccion</h4>
+                <p>Orden y acopio del refrigerante e insumo liquido de la construccion.</p>
+                <p>2021 Elemental SA</p>
              </div>
         </div>
     </main>
     <footer>
         <div>
-        <P>Domicilio:</P> 
-        <p>Telefono</p>
-        <p>WhatsApp</p>
-        <p>E-mail:</p>
+        <P>Domicilio: <span id="domicilio_footer"></span></P> 
+        <p>Telefono:  <span id="telefono_footer"></span></p>
+        <p>WhatsApp;  <span id="wp_footer"></span></p>
+        <p>E-mail:  <span id="email_footer"></span></p>
         </div>
         <div>Fecha de Publicacion:</div>
         <div></div>
