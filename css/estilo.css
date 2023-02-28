@@ -16,16 +16,19 @@ header {
 h1{
     text-align: left;
     font-weight: bold;
+    
 }
 
 h2{
     text-align: left;
     font-weight: bold;
     color: #303030;
+    
 }
 h3{
     text-align: left;
     font-weight: bold;
+    
 }
 .conenedor {
     margin-left: 10px;
@@ -33,18 +36,20 @@ h3{
     margin-bottom: 5px;
 }
 menu {
-    width: 900px;
+    width: 500px;
     margin 0 auto;
+
 }
 nav {
     width: 100%;
     float: right;
+    margin-right: 15px;
 }
 nav ul li {
     list-style: none;
-    float: left;
-    margin left: 75px;
-    padding: 25px 0;
+    float: right;
+    margin-left: 35px;
+    padding: 15px 0;
 
 }
 nav ul li a {
@@ -52,7 +57,13 @@ nav ul li a {
     color: #444;
     font-weight: bold;
 }
-
-main{
-    display: table;
+.sector {
+    clear: both;
+    height: auto;
+    width: 100%;
+    padding-left: 15px;
+    padding-bottom: 30px;
 }
+
+
+
