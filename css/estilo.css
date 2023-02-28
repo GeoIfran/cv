@@ -1,7 +1,58 @@
 * {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 header {
     font-family: 'Noto Sans', sans-serif;
+    background-color: darkcyan;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
 }
 
+h1{
+    text-align: left;
+    font-weight: bold;
+}
+
+h2{
+    text-align: left;
+    font-weight: bold;
+    color: #303030;
+}
+h3{
+    text-align: left;
+    font-weight: bold;
+}
+.conenedor {
+    margin-left: 10px;
+    margin-right 10px;
+    margin-bottom: 5px;
+}
+menu {
+    width: 900px;
+    margin 0 auto;
+}
+nav {
+    width: 100%;
+    float: right;
+}
+nav ul li {
+    list-style: none;
+    float: left;
+    margin left: 75px;
+    padding: 25px 0;
+
+}
+nav ul li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+}
+
+main{
+    display: table;
+}

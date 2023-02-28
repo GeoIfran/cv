@@ -1,0 +1,23 @@
+@media screen and (min-device-width: 698px) {
+    .volar_derecha {
+        float : right;
+        width: 16%;
+        
+        visibility: visible;
+    }
+    .contenido {
+        float: left;
+        width: 83%;
+        
+    }
+    footer {
+        float: left;
+        width: 99%;
+        background-color: aquamarine;
+    }
+    #foto {
+        width: 100%;
+        height: auto;
+    }
+
+}
