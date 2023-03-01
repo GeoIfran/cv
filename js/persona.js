@@ -6,6 +6,7 @@ const apellido_titulo = document.getElementById("apellido_tit");
 const sexo_profesion = document.getElementById('profesion_sexista');
 const nombre_cont = document.getElementById("nombre_contenido");
 const email_datos = document.getElementById("datos_email");
+const email_datos_contenido = document.getElementById("datos_email_cont");
 const apellido_cont = document.getElementById("apellido_contenido");
 const tipo_doc = document.getElementById("tipo_documento");
 const fn = document.getElementById("fecha_nacimiento");
@@ -24,15 +25,8 @@ const tel_foot = document.getElementById('telefono_footer');
 const wp_foot = document.getElementById('wp_footer');
 const email_foot = document.getElementById('email_footer');
 const link_wp = document.getElementById("vinculo-wp");
-function quitarGuiones (cadena){
-    cadenaDesarmadaenArray = cadena.split("-");
-    //rearmar string sin guiones
-    var cadenaSinGuiones ="";
-    for(var i = 0; i < cadenaDesarmadaenArray.lenght; i++){
-        cadenaSinGuiones += cadenaDesarmadaenArray[i];
-    }
-    return cadenaSinGuiones;
-}
+
+
 
 const generarPersona = async() => {
     try {
@@ -60,8 +54,9 @@ const generarPersona = async() => {
             }
         sexo_profesion.textContent = terminaciones_referencia;
         genero.textContent = sexo_persona;
-        email_datos.textContent = datos_persona.email;
+        email_datos.href = "mailto:"+datos_persona.email;
         email_foot.textContent = datos_persona.email;
+        email_datos_contenido,textContent = datos_persona.email;
         tipo_doc.textContent = datos_persona.id.name;
         num_doc.textContent = datos_persona.id.value;
         data_edad.textContent = datos_persona.dob.age;
@@ -75,7 +70,7 @@ const generarPersona = async() => {
         tel_mobil.textContent = datos_persona.cell;
         tel_wp.textContent = datos_persona.cell;
         wp_foot.textContent = datos_persona.cell;
-        link_wp.href = "http://wa.me/"+quitarGiones(datos_persona.cell);
+        
     } catch (error) {
         console.log(error);
     }
