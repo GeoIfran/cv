@@ -4,15 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Importando a una persona</title>
+    <title id="title_web">CV </title>
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+   <!--Importacion de tipografias Roboto 100 swap y  Noto 0 100 0 200 1 100 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;1,100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet" type="text/css" />
+    <link href="css/pantalla_chica.css" rel="stylesheet" type="text/css" />
+    <link href="css/pantalla_grande.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <h1>Importando desde randomuser.me</h1>
-    <p>El objetivo es importar y mostrar un usuario al azar desde randomuser.me para luego hacer el cv</p>
-    
+    <header>
+        <h1 id="nombreCompleto-titulo" >  <span id="apellido_tit"></span>, <span id="primerNombre_tit">Nombre</span></h1>
+        <h2 id="profesion-titulo"> <span >Expert<span id="profesion_sexista"></span> en refrigeración de materiales de la construcción</span></h2>
    
-    <script src="js/lo_que_hago_con_los_datos.js"></script>
-    <script src="js/los_datos.js"></script>
+         <nav class="">
+            <ul class="">
+                <li ><a href="#perfil">Perfil</a></li>
+                <li><a href="#datos">Datos</a></li>
+                <li><a href="#conocimientos">Conocimientos</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <main>
+        <div class="sector" id="perfil-sector">
+            <a name="perfil"></a>
+            <div class="volar_derecha"><img  id="foto" src="" alt="Imagen del CV"></div>
+            <div class="contenido" id="contenido-perfil">
+            
+                <h3>Presentacion</h3>
+                <p>Soy una persona codial proactiva, trabajadora, responsable y puntillosa con mis tareas. Separo muy clara ente el tiempo de trabajo del personal. </p>
+                <h3>Aspiraciones</h3>
+                <p>Me gusta formar parte de ambientes cordiales con almuerzos en grupo tareas comunes repartidas chistes y trabajo en armonia para que todo salga mejor.</p>
+                <p>Quisiera formar parte de un grupo de trabajo estable aunque cambien las obras en  las que trabajemos, no tengo conflicoto en trabajar tanto con hombres como con mujeres.</p>
+            </div>
+        </div>
+        <div class="sector" id="datos-sector">
+            <div class="volar_derecha"  id="datos">
+                <p><a href="" id="datos_email"> <img class="icono_lateral" src="imagenes/enviar_correo_negro.webp"></img></a> </p>
 
+                <p>
+                    <img class="icono_lateral" src="imagenes/boton-whatsapp-cootraemcali-297x300.png" alt="Logo WhatsApp"> <span id="whatsapp"></span>
+                </p>
+            </div>
+            <div  id="contenido-datos" class="contenido">
+                <a name="datos"></a>
+                <h3>Datos Personales</h3>
+                <p id="mombre_completo_contenido">Nombre Completo: <span  id="apellido_contenido"></span>, <span id="nombre_contenido"></span></p>
+                <div id="tipo_y_numero_de_documento_contenido">Tipo de Documento: <span  class="item_datos"id="tipo_documento"></span> Numero de Documento: <span id="numero_documento"></span></div>
+                <div id="fecha_nacimiento_edad_sexo"> Fecha de Nacimiento: <span class="item_datos" id="fecha_nacimiento"></span>  Edad: <span class="item_datos" id="edad"></span> Sexo: <span id="sexo"></span></div>
+                <div id="domicilio">Domicilio: <span  id="calle"></span> <span class="item_datos" id="puerta"></span>Localidad: <span class="item_datos" id="localidad-dir">. </span>Email: <span id="datos_email_cont"></span> </div>
+                <div>Telefono fijo: <span class="item_datos" id="fijo"></span> Telefono movil: <span id="celular"></span></div>
+            </div>
+        </div>
+        <div class="sector">
+            <div class="volar_derecha" id="conocimientos">
+                <p>Secundario</p>
+                <p>Idiomas</p>
+                <p>Español Nativo</p>
+                <p>Guarani Avanzado</p>
+            </div>
+            <div class="contenido" id="contenido-conocimientos">
+                <a name="conocimientos"></a>
+                <h3>Educacion Formal</h3>
+                <p>Secundario 2022. Escuela de Educación Media Nº 01 DE 02 </p>
+                <div>
+                <h3>Cursos e Idiomas</h3>
+                <p>Albañileria  en CIFIC-CFP N° 17</p>
+                <p>Idioma Nativo Español</p>
+                     <div>
+                    <p>SIU GUARANÍ en  Facultad Nacional de Humanidades y Artes de UNR</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sector">
+            <div class="volar_derecha"  id="experiencia">
+                <p>Experiencia</p>
+                <p>Refrigeracion de materiales de la construccion </p>
+                <p>1 año</p>
+                <p>Arvica Constructora</p>
+            </div>
+            <div class="contenido" id="contenido-experiencia" >
+                <a name="experiencia"></a>
+                <h3>Experiencia</h3>
+                <h4>Refrigeracion de materiales de la construccion</h4>
+                <p>Tenia mi cargo mantener la optima umedad de los materiales ara lograr un resultado final mas rapido y optimo</p>
+                <p>2022 Avica Constructora SA</p>
+                <h4>Proveedor de refrigerante de materiales de la construccion</h4>
+                <p>me encargaba de mantener constante el flujo del refrigerante de materiales de la construccion</p>
+                <p>2021 Elemental SA</p>
+                <h4>Acopiar refrigerante de materiales de la construccion</h4>
+                <p>Orden y acopio del refrigerante e insumo liquido de la construccion.</p>
+                <p>2021 Elemental SA</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="contenido_footer">
+        <P>Domicilio: <span id="domicilio_footer"></span></P> 
+        <p>Telefono:  <span id="telefono_footer"></span></p>
+        <p>WhatsApp;  <span id="wp_footer"></span></p>
+        <p>E-mail:  <span id="email_footer"></span></p>
+        </div>
+        <div>Fecha de Publicacion: 28 de Febrero de 2023 </div>
+        <div></div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="js/persona.js" ></script>
 </body>
 </html>
