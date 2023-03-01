@@ -11,6 +11,7 @@ header {
     clear: both;
     content: '';
     display: table;
+    padding-left: 20px;
 }
 
 h1{
@@ -30,10 +31,10 @@ h3{
     font-weight: bold;
     
 }
-.conenedor {
-    margin-left: 10px;
-    margin-right 10px;
-    margin-bottom: 5px;
+
+.contenido{
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 menu {
     width: 500px;
@@ -61,9 +62,13 @@ nav ul li a {
     clear: both;
     height: auto;
     width: 100%;
-    padding-left: 15px;
-    padding-bottom: 30px;
+
 }
-
-
+main{
+    padding-left: 20px;
+}
+.icono_lateral{
+    width: 50px;
+    height: auto;
+}
 

@@ -23,7 +23,16 @@ const dir_foot = document.getElementById('domicilio_footer');
 const tel_foot = document.getElementById('telefono_footer');
 const wp_foot = document.getElementById('wp_footer');
 const email_foot = document.getElementById('email_footer');
-
+const link_wp = document.getElementById("vinculo-wp");
+function quitarGuiones (cadena){
+    cadenaDesarmadaenArray = cadena.split("-");
+    //rearmar string sin guiones
+    var cadenaSinGuiones ="";
+    for(var i = 0; i < cadenaDesarmadaenArray.lenght; i++){
+        cadenaSinGuiones += cadenaDesarmadaenArray[i];
+    }
+    return cadenaSinGuiones;
+}
 
 const generarPersona = async() => {
     try {
@@ -66,7 +75,7 @@ const generarPersona = async() => {
         tel_mobil.textContent = datos_persona.cell;
         tel_wp.textContent = datos_persona.cell;
         wp_foot.textContent = datos_persona.cell;
-        
+        link_wp.href = "http://wa.me/"+quitarGiones(datos_persona.cell);
     } catch (error) {
         console.log(error);
     }
