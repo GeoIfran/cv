@@ -56,7 +56,7 @@ const generarPersona = async() => {
         genero.textContent = sexo_persona;
         email_datos.href = "mailto:"+datos_persona.email;
         email_foot.textContent = datos_persona.email;
-        email_datos_contenido,textContent = datos_persona.email;
+        email_datos_contenido.textContent = datos_persona.email;
         tipo_doc.textContent = datos_persona.id.name;
         num_doc.textContent = datos_persona.id.value;
         data_edad.textContent = datos_persona.dob.age;

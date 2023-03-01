@@ -19,5 +19,27 @@
         width: 100%;
         height: auto;
     }
+    menu {
+        width: 500px;
+        margin: 0 auto;
+    
+    }
+    nav {
+        width: 100%;
+        float: right;
+        margin-right: 15px;
+    }
+    nav ul li {
+        list-style: none;
+        float: right;
+        margin-left: 35px;
+        padding: 15px 0;
+    
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: #444;
+        font-weight: bold;
+    }
 
 }

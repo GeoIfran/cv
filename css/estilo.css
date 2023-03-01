@@ -29,6 +29,13 @@ h2{
 h3{
     text-align: left;
     font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+h4{
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
     
 }
 
@@ -36,28 +43,7 @@ h3{
     margin-top: 10px;
     margin-bottom: 15px;
 }
-menu {
-    width: 500px;
-    margin 0 auto;
 
-}
-nav {
-    width: 100%;
-    float: right;
-    margin-right: 15px;
-}
-nav ul li {
-    list-style: none;
-    float: right;
-    margin-left: 35px;
-    padding: 15px 0;
-
-}
-nav ul li a {
-    text-decoration: none;
-    color: #444;
-    font-weight: bold;
-}
 .sector {
     clear: both;
     height: auto;
@@ -70,9 +56,12 @@ main{
 .icono_lateral{
     width: 50px;
     height: auto;
+    padding: 5px;
+   
 }
 .item_datos {
     margin-right: 50px;
+    margin-bottom: 5px;
 }
 footer{
     text-align: center;
@@ -80,4 +69,9 @@ footer{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
+p{
+    margin-bottom: 8px;
+}
+#datos {
+    text-align: center;
+}
